@@ -6,6 +6,7 @@ target 'VoiceRecognitionAttendance' do
   use_frameworks!
 
   # Pods for VoiceRecognitionAttendance
-
+  pod 'PRTween', '~> 0.1'
+  pod 'Alamofire', '~> 5.0'
 
 end

@@ -11,6 +11,8 @@ import UIKit
 struct Students {
     let name: String
     let isAttending: Bool
+    let clientId: String
+    let isRecorded: Bool
 }
 
 class ChecklistViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
@@ -20,6 +22,8 @@ class ChecklistViewController: BaseViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var tableView: UITableView!
     
     private var students: [Students] = []
+    
+    private var timeDelay: Double = 30
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +41,13 @@ class ChecklistViewController: BaseViewController, UITableViewDelegate, UITableV
         return cell
     }
     
+    func timeUp(completion: (_ isDone: Bool) -> Void ) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 30) {
+            // code
+            // Request to check
+        }
+    }
+    
 }
 
 class ChecklistCell: UITableViewCell {
@@ -50,6 +61,6 @@ class ChecklistCell: UITableViewCell {
     
     func configUI(name: String, isAttending: Bool) {
         nameLabel.text = name
-        isAttending ? statusButton.setImage(<#T##image: UIImage?##UIImage?#>, for: .normal) : statusButton.setImage(<#T##image: UIImage?##UIImage?#>, for: .normal)
+        isAttending ? statusButton.setImage(#imageLiteral(resourceName: "icons8-ok"), for: .normal) : statusButton.setImage(#imageLiteral(resourceName: "icons8-cancel"), for: .normal)
     }
 }

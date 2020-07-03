@@ -12,7 +12,8 @@ protocol BaseViewControllerProtocol {
     
 }
 
-class BaseViewController: UIViewController, BaseViewControllerProtocol {
+class BaseViewController: UIViewController, BaseViewControllerProtocol, StoryboardInstantiatable {
+    static var storyboardName: AppStoryboard = .main
 
     lazy var navigationBar: NavigationBar = {
         let bar = NavigationBar()
