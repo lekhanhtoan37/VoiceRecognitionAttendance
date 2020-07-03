@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		04CF182A24ACDA0A00DF8C51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF182924ACDA0A00DF8C51 /* AppDelegate.swift */; };
-		04CF182C24ACDA0A00DF8C51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF182B24ACDA0A00DF8C51 /* SceneDelegate.swift */; };
 		04CF182E24ACDA0A00DF8C51 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF182D24ACDA0A00DF8C51 /* MainViewController.swift */; };
 		04CF183124ACDA0A00DF8C51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CF182F24ACDA0A00DF8C51 /* Main.storyboard */; };
 		04CF183324ACDA0D00DF8C51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CF183224ACDA0D00DF8C51 /* Assets.xcassets */; };
@@ -36,13 +35,16 @@
 		04CF186E24AD019500DF8C51 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF186D24AD019500DF8C51 /* NavigationBar.swift */; };
 		04CF187024AD01A200DF8C51 /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CF186F24AD01A200DF8C51 /* NavigationBar.xib */; };
 		04CF187324AD5A2E00DF8C51 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF187224AD5A2E00DF8C51 /* RecordViewController.swift */; };
-		04CF187524AD5A3900DF8C51 /* LoginVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF187424AD5A3900DF8C51 /* LoginVIewController.swift */; };
+		04CF187524AD5A3900DF8C51 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF187424AD5A3900DF8C51 /* LoginViewController.swift */; };
 		04CF187924AD64D000DF8C51 /* RecordButtonKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF187724AD64D000DF8C51 /* RecordButtonKit.swift */; };
 		04CF187A24AD64D000DF8C51 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF187824AD64D000DF8C51 /* RecordButton.swift */; };
 		04DBABBE24AE3BDD00495A49 /* StartRecording.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 04DBABBC24AE3BDD00495A49 /* StartRecording.aiff */; };
 		04DBABBF24AE3BDD00495A49 /* StopRecording.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 04DBABBD24AE3BDD00495A49 /* StopRecording.aiff */; };
 		04DBABC224AE441900495A49 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBABC024AE441900495A49 /* GradientView.swift */; };
 		04DBABC324AE441900495A49 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBABC124AE441900495A49 /* Storyboarded.swift */; };
+		04EB81AB24AF0DE20091E29C /* DecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EB81AA24AF0DE20091E29C /* DecodingError.swift */; };
+		04EB81AD24AF71BA0091E29C /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EB81AC24AF71BA0091E29C /* RecorderViewController.swift */; };
+		04EB81AF24AF8A3B0091E29C /* HTTPResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EB81AE24AF8A3B0091E29C /* HTTPResponseError.swift */; };
 		7BF56AD90EF0BD8E3AD992C5 /* libPods-VoiceRecognitionAttendance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B588B3A5BF31D057FF7078 /* libPods-VoiceRecognitionAttendance.a */; };
 		D70531AC24ADD50600D3889C /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70531AB24ADD50600D3889C /* CheckViewController.swift */; };
 		D70531AE24ADD7B500D3889C /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70531AD24ADD7B500D3889C /* SuccessViewController.swift */; };
@@ -52,7 +54,6 @@
 /* Begin PBXFileReference section */
 		04CF182624ACDA0A00DF8C51 /* VoiceRecognitionAttendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceRecognitionAttendance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CF182924ACDA0A00DF8C51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04CF182B24ACDA0A00DF8C51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04CF182D24ACDA0A00DF8C51 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04CF183024ACDA0A00DF8C51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04CF183224ACDA0D00DF8C51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,13 +82,16 @@
 		04CF186D24AD019500DF8C51 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		04CF186F24AD01A200DF8C51 /* NavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
 		04CF187224AD5A2E00DF8C51 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
-		04CF187424AD5A3900DF8C51 /* LoginVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVIewController.swift; sourceTree = "<group>"; };
+		04CF187424AD5A3900DF8C51 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04CF187724AD64D000DF8C51 /* RecordButtonKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButtonKit.swift; sourceTree = "<group>"; };
 		04CF187824AD64D000DF8C51 /* RecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
 		04DBABBC24AE3BDD00495A49 /* StartRecording.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = StartRecording.aiff; sourceTree = "<group>"; };
 		04DBABBD24AE3BDD00495A49 /* StopRecording.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = StopRecording.aiff; sourceTree = "<group>"; };
 		04DBABC024AE441900495A49 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		04DBABC124AE441900495A49 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		04EB81AA24AF0DE20091E29C /* DecodingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DecodingError.swift; path = VoiceRecognitionAttendance/Modules/DecodingError.swift; sourceTree = SOURCE_ROOT; };
+		04EB81AC24AF71BA0091E29C /* RecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
+		04EB81AE24AF8A3B0091E29C /* HTTPResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HTTPResponseError.swift; path = VoiceRecognitionAttendance/Modules/HTTPResponseError.swift; sourceTree = SOURCE_ROOT; };
 		53B588B3A5BF31D057FF7078 /* libPods-VoiceRecognitionAttendance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VoiceRecognitionAttendance.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C9C0FDF535AC9637BC6833 /* Pods-VoiceRecognitionAttendance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceRecognitionAttendance.debug.xcconfig"; path = "Target Support Files/Pods-VoiceRecognitionAttendance/Pods-VoiceRecognitionAttendance.debug.xcconfig"; sourceTree = "<group>"; };
 		BFD40767129AC44FAFD42BCE /* Pods-VoiceRecognitionAttendance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceRecognitionAttendance.release.xcconfig"; path = "Target Support Files/Pods-VoiceRecognitionAttendance/Pods-VoiceRecognitionAttendance.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,16 +137,15 @@
 			isa = PBXGroup;
 			children = (
 				04CF182924ACDA0A00DF8C51 /* AppDelegate.swift */,
-				04CF182B24ACDA0A00DF8C51 /* SceneDelegate.swift */,
 				04CF183F24ACDAE600DF8C51 /* Extension */,
 				04CF186824ACDB3F00DF8C51 /* Helper */,
 				04CF186724ACDB3C00DF8C51 /* Common */,
 				04CF187124AD58BD00DF8C51 /* Modules */,
+				04CF182F24ACDA0A00DF8C51 /* Main.storyboard */,
 				04CF185224ACDB0500DF8C51 /* Utils */,
 				04CF186924AD00C100DF8C51 /* CustomView */,
 				04CF185324ACDB1200DF8C51 /* Base */,
 				04DBABBB24AE3BDD00495A49 /* Sound Effects */,
-				04CF182F24ACDA0A00DF8C51 /* Main.storyboard */,
 				D7E0F6BE24AEC3AF00EAFDD4 /* VoiceRecognitionAttendance-Bridging-Header.h */,
 				04CF183224ACDA0D00DF8C51 /* Assets.xcassets */,
 				04CF183424ACDA0D00DF8C51 /* LaunchScreen.storyboard */,
@@ -170,6 +173,7 @@
 		04CF185224ACDB0500DF8C51 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				04EB81AA24AF0DE20091E29C /* DecodingError.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -211,6 +215,7 @@
 		04CF186824ACDB3F00DF8C51 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				04EB81AE24AF8A3B0091E29C /* HTTPResponseError.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -237,9 +242,10 @@
 		04CF187124AD58BD00DF8C51 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				04CF187424AD5A3900DF8C51 /* LoginVIewController.swift */,
+				04CF187424AD5A3900DF8C51 /* LoginViewController.swift */,
 				04CF182D24ACDA0A00DF8C51 /* MainViewController.swift */,
 				04CF187224AD5A2E00DF8C51 /* RecordViewController.swift */,
+				04EB81AC24AF71BA0091E29C /* RecorderViewController.swift */,
 				D70531AB24ADD50600D3889C /* CheckViewController.swift */,
 				D70531AD24ADD7B500D3889C /* SuccessViewController.swift */,
 				D70531AF24ADD85900D3889C /* EnterViewController.swift */,
@@ -409,16 +415,18 @@
 				04CF186E24AD019500DF8C51 /* NavigationBar.swift in Sources */,
 				04CF187324AD5A2E00DF8C51 /* RecordViewController.swift in Sources */,
 				04CF185024ACDAE600DF8C51 /* Extension+AVAsset.swift in Sources */,
-				04CF187524AD5A3900DF8C51 /* LoginVIewController.swift in Sources */,
+				04EB81AD24AF71BA0091E29C /* RecorderViewController.swift in Sources */,
+				04CF187524AD5A3900DF8C51 /* LoginViewController.swift in Sources */,
+				04EB81AF24AF8A3B0091E29C /* HTTPResponseError.swift in Sources */,
 				04CF183E24ACDAB800DF8C51 /* ChecklistViewController.swift in Sources */,
 				04CF186124ACDB1200DF8C51 /* BasePopupView.swift in Sources */,
 				04CF185E24ACDB1200DF8C51 /* BaseCollectionView.swift in Sources */,
 				04CF182A24ACDA0A00DF8C51 /* AppDelegate.swift in Sources */,
 				04DBABC224AE441900495A49 /* GradientView.swift in Sources */,
-				04CF182C24ACDA0A00DF8C51 /* SceneDelegate.swift in Sources */,
 				04CF184C24ACDAE600DF8C51 /* Extension+UIColor.swift in Sources */,
 				04CF186524ACDB1200DF8C51 /* GenericTableViewController.swift in Sources */,
 				04CF184D24ACDAE600DF8C51 /* Extenstion+UIViewController.swift in Sources */,
+				04EB81AB24AF0DE20091E29C /* DecodingError.swift in Sources */,
 				04CF187A24AD64D000DF8C51 /* RecordButton.swift in Sources */,
 				04CF186224ACDB1200DF8C51 /* BaseView.swift in Sources */,
 				04DBABC324AE441900495A49 /* Storyboarded.swift in Sources */,

@@ -15,6 +15,14 @@ struct Students {
     let isRecorded: Bool
 }
 
+struct Person {
+    let name: String
+    let isHost: Int
+    let clientId: String
+    let trainFolder: String
+    let testFolder: String
+}
+
 class ChecklistViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
     
@@ -24,10 +32,13 @@ class ChecklistViewController: BaseViewController, UITableViewDelegate, UITableV
     private var students: [Students] = []
     
     private var timeDelay: Double = 30
+    var isF: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        tableView.rowHeight = 90
+    
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,6 +68,7 @@ class ChecklistCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         statusButton.isEnabled = false
+        self.backgroundColor = .white
     }
     
     func configUI(name: String, isAttending: Bool) {

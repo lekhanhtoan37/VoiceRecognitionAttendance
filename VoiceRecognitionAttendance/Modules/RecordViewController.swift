@@ -21,7 +21,7 @@ protocol RecordViewControllerDelegate: class {
 }
 
 
-class RecordViewController: BaseViewController {
+class RecordViewController: UIViewController {
     //MARK:- Properties
     var handleView = UIView()
     var recordButton = RecordButton()
@@ -35,13 +35,15 @@ class RecordViewController: BaseViewController {
     private var audioFile: AVAudioFile?
     weak var delegate: RecordViewControllerDelegate?
     
+    public var identifyTime: Int = 5
+    
     //MARK:- Outlets
     @IBOutlet weak var fadeView: UIView!
     
     //MARK:- Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = .black
         setupHandelView()
         setupRecordingButton()
         setupTimeLabel()

@@ -10,7 +10,37 @@ import UIKit
 
 class CheckViewController: BaseViewController {
     
-    let paperText1: String =
+    var arrayValue: [String] = []
+    
+    
+    @IBOutlet weak var roomLabel: UILabel!
+    @IBOutlet weak var nameRoom: UILabel!
+    @IBOutlet weak var confirmButton: UIButton!
+    
+    @IBOutlet weak var textView: UITextView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        arrayValue = paperText1.split(separator: ".").map {
+            $0.trimmingCharacters(in: .whitespacesAndNewlines)
+        }
+        print(arrayValue)
+        
+        textView.text = getRandomString(input: arrayValue)
+    }
+    
+    func getRandomString(input: [String]) -> String {
+        guard input.count > 0 else {
+            return ""
+        }
+        return input.randomElement()!
+    }
+    
+    func checkWithServer() {
+        
+    }
+}
+
+let paperText1: String =
 """
 Lưỡng viện Mỹ thông qua dự luật trừng phạt ngân hàng Trung Quốc liên quan quan chức thực thi luật an ninh Hong Kong và hối thúc Trump ký luật.
 
@@ -85,21 +115,3 @@ TP HCMHư hỏng từ lớp 7, hai lần vào tù nhưng khi ngồi bên quan t�
 
 Ở tuổi 37, anh đã là một chuyên gia cao cấp, chủ tịch một tập đoàn công nghệ và kỹ thuật ôtô với bốn công ty con. Nhưng ít ai ngờ chàng trai quê Đăk Lăk này từng có một quá khứ "khét tiếng giang hồ" với hai lần vào tù vì cầm đầu những vụ cướp táo tợn.
 """
-    
-    var arrayValue: [String] = []
-    
-    
-    @IBOutlet weak var roomLabel: UILabel!
-    @IBOutlet weak var nameRoom: UILabel!
-    @IBOutlet weak var confirmButton: UIButton!
-    
-    @IBOutlet weak var textView: UITextView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        arrayValue = paperText1.split(separator: ".").map {
-            $0.trimmingCharacters(in: .whitespacesAndNewlines)
-        }
-         print(arrayValue)
-        
-    }
-}

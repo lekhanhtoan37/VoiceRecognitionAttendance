@@ -8,9 +8,6 @@
 
 import UIKit
 
-struct User {
-    
-}
 let API_Router = "https://backend-voice-recog.herokuapp.com/"
 
 class MainViewController: BaseViewController {
@@ -18,11 +15,12 @@ class MainViewController: BaseViewController {
     @IBOutlet weak var createRoomButton: UIButton!
     @IBOutlet weak var enterRoomButton: UIButton!
     
-    var user: Students!
+    var user: Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        navigationBar.navigationTitle.text = "Man hinh chinh"
+        navigationBar.navigationTitle.textColor = .white
         createRoomButton.addTarget(self, action: #selector(createRoom), for: .touchUpInside)
         enterRoomButton.addTarget(self, action: #selector(enterRoom), for: .touchUpInside)
         
@@ -31,20 +29,38 @@ class MainViewController: BaseViewController {
     @objc func createRoom() {
         // create Rooom
         // for teacher
-        let checklistVC = ChecklistViewController.instantiate()
-        push(vc: checklistVC)
+        if user == nil {
+            let checklistVC = ChecklistViewController.instantiate()
+            checklistVC.isF = true
+            push(vc: checklistVC)
+        } else {
+        
+        if user.isHost == 0 {        
+            let checklistVC = ChecklistViewController.instantiate()
+            push(vc: checklistVC)
+            }
+            
+        }
         
     }
 
     @objc func enterRoom() {
         // enter room
         // for student
-        if !user.isRecorded {
-            let checkVC = RecordViewController.instantiate()
-            push(vc: checkVC)
-        }
+        if user == nil {
+            let enterVC = EnterViewController.instantiate()
+            enterVC.isF = true
+            push(vc: enterVC)
+        } else {
         
+        if user.isHost == 1 {
+//            let checkVC = RecordViewController.instantiate()
+            let enterVC = EnterViewController.instantiate()
+            push(vc: enterVC)
+        }
+        }
     }
+        
 
     func push(vc: UIViewController) {
         self.navigationController?.pushViewController(vc, animated: true)
