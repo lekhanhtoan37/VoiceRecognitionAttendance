@@ -21,23 +21,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="rbA-DC-2y0">
-                                <rect key="frame" x="40" y="244" width="295" height="64"/>
+                                <rect key="frame" x="50" y="244" width="275" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zc-Fw-qFm">
-                                        <rect key="frame" x="0.0" y="0.0" width="127.5" height="64"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="5Zc-Fw-qFm" secondAttribute="height" multiplier="2" id="XZS-O3-hcl"/>
-                                        </constraints>
-                                        <state key="normal" title="Signin"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3Q-zM-Fx0">
+                                        <rect key="frame" x="0.0" y="0.0" width="117.5" height="30"/>
+                                        <state key="normal" title="Student"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70K-lb-lCi">
-                                        <rect key="frame" x="167.5" y="0.0" width="127.5" height="64"/>
-                                        <state key="normal" title="Login"/>
+                                        <rect key="frame" x="157.5" y="0.0" width="117.5" height="30"/>
+                                        <state key="normal" title="Teacher"/>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="5Zc-Fw-qFm" firstAttribute="width" secondItem="70K-lb-lCi" secondAttribute="width" id="9M4-9x-zuP"/>
-                                    <constraint firstItem="70K-lb-lCi" firstAttribute="height" secondItem="5Zc-Fw-qFm" secondAttribute="height" id="ktx-j9-aQ3"/>
+                                    <constraint firstItem="u3Q-zM-Fx0" firstAttribute="width" secondItem="70K-lb-lCi" secondAttribute="width" id="GTB-Si-MHs"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ten dang nhap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odZ-eK-8fe">
@@ -46,7 +42,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mat khau" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzp-NF-XJh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ma so sinh vien" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzp-NF-XJh">
                                 <rect key="frame" x="20" y="139.5" width="335" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -73,7 +69,7 @@
                             <constraint firstItem="iOd-mU-gfA" firstAttribute="leading" secondItem="jzp-NF-XJh" secondAttribute="leading" id="ged-JL-eS3"/>
                             <constraint firstItem="rbA-DC-2y0" firstAttribute="top" secondItem="iOd-mU-gfA" secondAttribute="bottom" constant="40" id="kTV-qO-yj9"/>
                             <constraint firstItem="jzp-NF-XJh" firstAttribute="centerX" secondItem="DMU-45-wbc" secondAttribute="centerX" id="rcl-YR-XsC"/>
-                            <constraint firstItem="rbA-DC-2y0" firstAttribute="leading" secondItem="vh3-dZ-OnO" secondAttribute="leading" constant="40" id="ryR-gD-78v"/>
+                            <constraint firstItem="rbA-DC-2y0" firstAttribute="leading" secondItem="vh3-dZ-OnO" secondAttribute="leading" constant="50" id="ryR-gD-78v"/>
                             <constraint firstItem="iOd-mU-gfA" firstAttribute="top" secondItem="jzp-NF-XJh" secondAttribute="bottom" constant="10" id="svr-1t-N13"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vh3-dZ-OnO"/>
@@ -81,7 +77,7 @@
                     <connections>
                         <outlet property="loginButton" destination="70K-lb-lCi" id="Jok-vZ-36k"/>
                         <outlet property="passwordTextfield" destination="iOd-mU-gfA" id="mTx-Yl-w1S"/>
-                        <outlet property="signinButton" destination="5Zc-Fw-qFm" id="JgM-6i-1xi"/>
+                        <outlet property="studentButton" destination="u3Q-zM-Fx0" id="XUa-fN-eq7"/>
                         <outlet property="usernamTextfield" destination="DMU-45-wbc" id="APA-ja-hrb"/>
                     </connections>
                 </viewController>

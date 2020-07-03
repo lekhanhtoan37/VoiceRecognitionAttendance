@@ -43,7 +43,7 @@
 		04DBABBF24AE3BDD00495A49 /* StopRecording.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 04DBABBD24AE3BDD00495A49 /* StopRecording.aiff */; };
 		04DBABC224AE441900495A49 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBABC024AE441900495A49 /* GradientView.swift */; };
 		04DBABC324AE441900495A49 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBABC124AE441900495A49 /* Storyboarded.swift */; };
-		3C42FA375D4A6F3CC9D75625 /* Pods_VoiceRecognitionAttendance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F628DA9FDF43F382928E66CB /* Pods_VoiceRecognitionAttendance.framework */; };
+		7BF56AD90EF0BD8E3AD992C5 /* libPods-VoiceRecognitionAttendance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B588B3A5BF31D057FF7078 /* libPods-VoiceRecognitionAttendance.a */; };
 		D70531AC24ADD50600D3889C /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70531AB24ADD50600D3889C /* CheckViewController.swift */; };
 		D70531AE24ADD7B500D3889C /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70531AD24ADD7B500D3889C /* SuccessViewController.swift */; };
 		D70531B024ADD85900D3889C /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70531AF24ADD85900D3889C /* EnterViewController.swift */; };
@@ -88,12 +88,15 @@
 		04DBABBD24AE3BDD00495A49 /* StopRecording.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = StopRecording.aiff; sourceTree = "<group>"; };
 		04DBABC024AE441900495A49 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		04DBABC124AE441900495A49 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
-		0DE55F71C1D13F0779002126 /* Pods-VoiceRecognitionAttendance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceRecognitionAttendance.debug.xcconfig"; path = "Target Support Files/Pods-VoiceRecognitionAttendance/Pods-VoiceRecognitionAttendance.debug.xcconfig"; sourceTree = "<group>"; };
+		53B588B3A5BF31D057FF7078 /* libPods-VoiceRecognitionAttendance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VoiceRecognitionAttendance.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C9C0FDF535AC9637BC6833 /* Pods-VoiceRecognitionAttendance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceRecognitionAttendance.debug.xcconfig"; path = "Target Support Files/Pods-VoiceRecognitionAttendance/Pods-VoiceRecognitionAttendance.debug.xcconfig"; sourceTree = "<group>"; };
+		BFD40767129AC44FAFD42BCE /* Pods-VoiceRecognitionAttendance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceRecognitionAttendance.release.xcconfig"; path = "Target Support Files/Pods-VoiceRecognitionAttendance/Pods-VoiceRecognitionAttendance.release.xcconfig"; sourceTree = "<group>"; };
 		D70531AB24ADD50600D3889C /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
 		D70531AD24ADD7B500D3889C /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		D70531AF24ADD85900D3889C /* EnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterViewController.swift; sourceTree = "<group>"; };
-		F628DA9FDF43F382928E66CB /* Pods_VoiceRecognitionAttendance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceRecognitionAttendance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F828BDAE89E49CAB4E19B65C /* Pods-VoiceRecognitionAttendance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceRecognitionAttendance.release.xcconfig"; path = "Target Support Files/Pods-VoiceRecognitionAttendance/Pods-VoiceRecognitionAttendance.release.xcconfig"; sourceTree = "<group>"; };
+		D7392C1524AED5CC0059959A /* libPRTween.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPRTween.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7392C1724AED5D10059959A /* libAZDialogView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAZDialogView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E0F6BE24AEC3AF00EAFDD4 /* VoiceRecognitionAttendance-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoiceRecognitionAttendance-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C42FA375D4A6F3CC9D75625 /* Pods_VoiceRecognitionAttendance.framework in Frameworks */,
+				7BF56AD90EF0BD8E3AD992C5 /* libPods-VoiceRecognitionAttendance.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +117,7 @@
 				04CF182824ACDA0A00DF8C51 /* VoiceRecognitionAttendance */,
 				04CF182724ACDA0A00DF8C51 /* Products */,
 				556103863ED467BBEEAC40B0 /* Pods */,
-				3E480614F2E826131046B1BF /* Frameworks */,
+				D6141604171B33AF389004C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +143,7 @@
 				04CF185324ACDB1200DF8C51 /* Base */,
 				04DBABBB24AE3BDD00495A49 /* Sound Effects */,
 				04CF182F24ACDA0A00DF8C51 /* Main.storyboard */,
+				D7E0F6BE24AEC3AF00EAFDD4 /* VoiceRecognitionAttendance-Bridging-Header.h */,
 				04CF183224ACDA0D00DF8C51 /* Assets.xcassets */,
 				04CF183424ACDA0D00DF8C51 /* LaunchScreen.storyboard */,
 				04CF183724ACDA0D00DF8C51 /* Info.plist */,
@@ -262,21 +266,23 @@
 			path = "Sound Effects";
 			sourceTree = "<group>";
 		};
-		3E480614F2E826131046B1BF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F628DA9FDF43F382928E66CB /* Pods_VoiceRecognitionAttendance.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		556103863ED467BBEEAC40B0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0DE55F71C1D13F0779002126 /* Pods-VoiceRecognitionAttendance.debug.xcconfig */,
-				F828BDAE89E49CAB4E19B65C /* Pods-VoiceRecognitionAttendance.release.xcconfig */,
+				80C9C0FDF535AC9637BC6833 /* Pods-VoiceRecognitionAttendance.debug.xcconfig */,
+				BFD40767129AC44FAFD42BCE /* Pods-VoiceRecognitionAttendance.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D6141604171B33AF389004C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7392C1724AED5D10059959A /* libAZDialogView.a */,
+				D7392C1524AED5CC0059959A /* libPRTween.a */,
+				53B588B3A5BF31D057FF7078 /* libPods-VoiceRecognitionAttendance.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D70531AA24ADCF8600D3889C /* Popup */ = {
@@ -293,11 +299,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04CF183A24ACDA0D00DF8C51 /* Build configuration list for PBXNativeTarget "VoiceRecognitionAttendance" */;
 			buildPhases = (
-				85CBBA85DDB9A51725E0C2A3 /* [CP] Check Pods Manifest.lock */,
+				32856A7597F5349E5C725D72 /* [CP] Check Pods Manifest.lock */,
 				04CF182224ACDA0A00DF8C51 /* Sources */,
 				04CF182324ACDA0A00DF8C51 /* Frameworks */,
 				04CF182424ACDA0A00DF8C51 /* Resources */,
-				A85EB355FF8FC481AC88F677 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,7 +363,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		85CBBA85DDB9A51725E0C2A3 /* [CP] Check Pods Manifest.lock */ = {
+		32856A7597F5349E5C725D72 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -378,23 +383,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A85EB355FF8FC481AC88F677 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VoiceRecognitionAttendance/Pods-VoiceRecognitionAttendance-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VoiceRecognitionAttendance/Pods-VoiceRecognitionAttendance-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoiceRecognitionAttendance/Pods-VoiceRecognitionAttendance-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -578,10 +566,11 @@
 		};
 		04CF183B24ACDA0D00DF8C51 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DE55F71C1D13F0779002126 /* Pods-VoiceRecognitionAttendance.debug.xcconfig */;
+			baseConfigurationReference = 80C9C0FDF535AC9637BC6833 /* Pods-VoiceRecognitionAttendance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5HJWP2XUD;
 				INFOPLIST_FILE = VoiceRecognitionAttendance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -596,10 +585,11 @@
 		};
 		04CF183C24ACDA0D00DF8C51 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F828BDAE89E49CAB4E19B65C /* Pods-VoiceRecognitionAttendance.release.xcconfig */;
+			baseConfigurationReference = BFD40767129AC44FAFD42BCE /* Pods-VoiceRecognitionAttendance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5HJWP2XUD;
 				INFOPLIST_FILE = VoiceRecognitionAttendance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

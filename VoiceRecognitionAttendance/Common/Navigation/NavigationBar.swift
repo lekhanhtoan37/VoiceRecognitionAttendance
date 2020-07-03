@@ -28,7 +28,8 @@ class NavigationBar: UIView {
      
     var isRightFirstButtonEnabled: Bool {
       set {
-         rightButton.isEnabled = newValue
+        rightButton.isEnabled = false
+        rightButton.isHidden = true
       }
       get {
          return rightButton.isEnabled
